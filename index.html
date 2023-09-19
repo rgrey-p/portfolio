@@ -4,8 +4,231 @@
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Ryu_Portfolio</title>
+      <link rel="stylesheet" href="./css/common.css" />
+      <link rel="stylesheet" href="./css/index.css" />
+      <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+      <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
   </head>
   <div id="app">
-   <h1>hello</h1>
+   <header-template></header-template>
   </div>
+  <body>
+      <main> 
+         <div class="hight"></div>
+         <div class="bg_img">
+            <div class="bg_img-text">
+               <div class="title">
+                  <h1 class="name">RYU GOTO</h1>
+               </div>
+            </div>
+            <!-- <p>If you keep to try…, your efforts will pay off<p> -->
+            <p>Let me introduce myself</p>
+        </div>
+        <content>
+         <div class="tab">
+            <button class="tablinks active" onclick="openTab(event, 'photo')">Photo</button>
+            <button class="tablinks" onclick="openTab(event, 'digital')">Digital Content</button>
+            <button class="tablinks" onclick="openTab(event, 'branding')">Branding</button>
+            <button class="tablinks" onclick="openTab(event, 'design')">Illustration</button>
+         </div>
+         <div id="photo" class="tabcontent" style="display: block;">
+            <div class="content_tittle">
+               <h2>Photo</h2>
+            </div>
+   
+            <div class="gallery">
+               <div class="row">
+                  <div class="col">
+                     <img src="./img/Amalfi.JPG" alt="Photo 1">
+                     <div class="overlay">
+                        <p class="description">AMALFI, ITALY</p>
+                     </div>
+                  </div>
+                  <div class="col">
+                     <img src="./img/Venice.JPG" alt="Photo 2">
+                     <div class="overlay">
+                        <p class="description">VENICE, ITALY</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col">
+                     <img src="./img/victoria.jpg" alt="Photo 3">
+                     <div class="overlay">
+                        <p class="description">VICTORIA, CANADA</p>
+                     </div>
+                  </div>
+                  <div class="col">
+                     <img src="./img/asakusa.JPG" alt="Photo 4">
+                     <div class="overlay">
+                        <p class="description">TOKYO, JAPAN</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col portrait">
+                     <img src="./img/tokyo.jpg" alt="Photo 3">
+                     <div class="overlay">
+                        <p class="description">TOKYO, JAPAN</p>
+                     </div>
+                  </div>
+                  <div class="col portrait">
+                     <img src="./img/sebu.jpg" alt="Photo 4">
+                     <div class="overlay">
+                        <p class="description">SEBU, PHILIPPINES</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col">
+                     <img src="./img/Venice2.JPG" alt="Photo 3">
+                     <div class="overlay">
+                        <p class="description">VENICE, ITALY</p>
+                     </div>
+                  </div>
+                  <div class="col">
+                     <img src="./img/nigata.JPG" alt="Photo 4">
+                     <div class="overlay">
+                        <p class="description">NIIGATA, JAPAN</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+          
+         <div id="design" class="tabcontent">
+            <div class="content_tittle">
+               <h2>illustration</h2>
+            </div>
+   
+            <div class="gallery illustration">
+               
+                  <div class="col">
+                     <img src="./img/FrenchBulldogWearingSunglasses.png" alt="Photo 1">
+                     <div class="overlay">
+                        <p class="description">French Bulldog</p>
+                     </div>
+                  </div>
+                  <div class="col">
+                     <img src="./img/PenguinWearingSunglasses.png" alt="Photo 2">
+                     <div class="overlay">
+                        <p class="description">Penguin</p>
+                     </div>
+                  </div>
+             
+               
+                  <div class="col">
+                     <img src="./img/RaccoonWearingSunglasses.png" alt="Photo 3">
+                     <div class="overlay">
+                        <p class="description">Raccoon</p>
+                     </div>
+                  </div>
+                  <div class="col">
+                     <img src="./img/FrenchBulldog.png" alt="Photo 4">
+                     <div class="overlay">
+                        <p class="description">French Bulldog</p>
+                     </div>
+                  </div>
+           
+               
+            </div>
+         </div>
+
+         <div id="digital" class="tabcontent">
+            <div class="content_tittle">
+               <h2>Instagram Content</h2>
+            </div>
+   
+            <div class="gallery insta">
+                  <div class="col">
+                     <img src="./img/insta/IMG_5615.jpg" alt="Photo 1">
+                     <!-- <div class="overlay">
+                        <p class="description">AMALFI, ITALY</p>
+                     </div> -->
+                  </div>
+                  <div class="col">
+                     <img src="./img/insta/IMG_5614.jpg" alt="Photo 2">
+                     <!-- <div class="overlay">
+                        <p class="description">VENICE, ITALY</p>
+                     </div> -->
+                  </div>
+           
+               
+            </div>
+
+            <div class="content_tittle">
+               <h2>Tiktok Content</h2>
+            </div>
+            <div class="gallery insta">
+               
+                  <div class="col">
+                     <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@backpack3200/video/7273956852067536134" data-video-id="7273956852067536134" style="max-width: 325;min-width: 325;" > <section> <a target="_blank" title="@backpack3200" href="https://www.tiktok.com/@backpack3200?refer=embed">@backpack3200</a> Best backpack I&#39;ve ever bought in my lifeee! <a title="backpack" target="_blank" href="https://www.tiktok.com/tag/backpack?refer=embed">#backpack</a> <a title="arcteryx" target="_blank" href="https://www.tiktok.com/tag/arcteryx?refer=embed">#arcteryx</a> <a title="daily" target="_blank" href="https://www.tiktok.com/tag/daily?refer=embed">#daily</a> <a target="_blank" title="♬ Weekend - Ashley Mehta" href="https://www.tiktok.com/music/Weekend-7136172512823494657?refer=embed">♬ Weekend - Ashley Mehta</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+                  </div>
+                  <div class="col">
+                     <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@backpack3200/video/7273987734849522949" data-video-id="7273987734849522949" style="max-width: 325;min-width: 325;" > <section> <a target="_blank" title="@backpack3200" href="https://www.tiktok.com/@backpack3200?refer=embed">@backpack3200</a> Best life with best back pack Raincouver? Doesn’t matter, let’s go out ! <a title="backpack" target="_blank" href="https://www.tiktok.com/tag/backpack?refer=embed">#backpack</a> <a title="arcteryx" target="_blank" href="https://www.tiktok.com/tag/arcteryx?refer=embed">#arcteryx</a> <a title="waterproof" target="_blank" href="https://www.tiktok.com/tag/waterproof?refer=embed">#waterproof</a> <a title="dailyvlog" target="_blank" href="https://www.tiktok.com/tag/dailyvlog?refer=embed">#dailyvlog</a> <a title="vanlife" target="_blank" href="https://www.tiktok.com/tag/vanlife?refer=embed">#vanlife</a> <a target="_blank" title="♬ original sound - backpack" href="https://www.tiktok.com/music/original-sound-7273987744040815365?refer=embed">♬ original sound - backpack</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+                  </div>
+              
+            </div>
+           
+
+            <div class="content_tittle">
+               <h2>Advertisement</h2>
+            </div>
+            <div class="gallery insta">
+               <div class="col">
+                  <img src="./img/ad/ad1.png" alt="Photo 1">
+                  <!-- <div class="overlay">
+                     <p class="description">AMALFI, ITALY</p>
+                  </div> -->
+               </div>
+               <div class="col">
+                  <img src="./img/ad/ad2.png" alt="Photo 2">
+                  <!-- <div class="overlay">
+                     <p class="description">VENICE, ITALY</p>
+                  </div> -->
+               </div>
+        
+            
+         </div>
+         </div>
+
+         <div id="branding" class="tabcontent">
+            <div class="content_tittle">
+               <h2>Branding</h2>
+            </div>
+   
+            <div class="gallery">
+               <div class="row">
+                  <div class="col">
+                     <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFe5arI7Io&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+                  </div>
+                  <div class="col">
+                     <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFpY6YqJTk&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         
+      </content>
+      </main>
+   <footer>
+      <small>
+         Copyright © 2023 Ryu Goto
+      </small>
+   </footer>
+      <script src="js/index.js"></script>
+      <script src="js/component/common.js"></script>
+  </body>
 </html>
